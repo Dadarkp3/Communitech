@@ -1,3 +1,64 @@
-h1 {
-  color: red;
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #00bad6;
+  background: 00bad6;
+  padding: 10px;
+}
+
+.logo-figure {
+  padding: 3px 18px;
+  background: white;
+  border-radius: 8px;
+}
+
+.logo-img {
+  width: 90px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  justify-content: space-between;
+}
+
+.navbar-items {
+  color: white;
+  font-size: 10px;
+}
+
+.navbar-link {
+  margin: 0 1rem;
+  text-transform: lowercase;
+}
+
+.links-externos {
+  padding: 9px;
+  border-radius: 6px;
+}
+
+.redes-sociais {
+  background: #ff9705;
+}
+
+.jovens {
+  background: #f13035;
+}
+
+.inscricao {
+  padding: 10px 28px;
+  background: #ffffff;
+  border-radius: 21px;
+  color: #256e79;
 }
