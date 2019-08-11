@@ -79,6 +79,14 @@ ul {
   background: linear-gradient(#00bad6, #00bad6, #0f6d7b);
 }
 
+.sidebar {
+  display: none;
+}
+
+.transparent {
+  display: none;
+}
+
 /*Navbar media queries*/
 @media only screen and (max-width: 850px) {
   .desktop {
@@ -91,23 +99,27 @@ ul {
   }
 
   .sidebar {
+    display: flex;
     position: absolute;
     z-index: 1050;
     position: 0;
     top: 0;
     background-color: #383434;
     height: 100vh;
-    right: -1000px;
   }
 
   .closed {
     width: 0%;
+    left: -1000px;
+    transition: all ease 1s;
   }
 
   .open {
+    display: flex;
     width: 90%;
     max-width: 400px;
-    right: 47px;
+    left: 0;
+    transition: all ease 1s;
   }
 
   #menu-hamburguer {
@@ -115,5 +127,23 @@ ul {
     border: 0;
     margin: 0;
     padding: 0;
+  }
+
+  .blocked {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.5;
+    transition: all ease 1s;
+  }
+
+  .transparent {
+    display: flex;
+    opacity: 0;
+    transition: all ease 1s;
   }
 }
