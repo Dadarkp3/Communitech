@@ -14,12 +14,8 @@ module.exports = {
     path: path.join(config.root, config.paths.dist),
     filename: '[name].[hash].js',
   },
-  mode: ['production', 'development'].includes(config.env)
-    ? config.env
-    : 'development',
-  devtool: config.env === 'production'
-    ? 'hidden-source-map'
-    : 'cheap-eval-source-map',
+  mode: ['production', 'development'].includes(config.env) ? config.env : 'development',
+  devtool: config.env === 'production' ? 'hidden-source-map' : 'cheap-eval-source-map',
   devServer: {
     contentBase: path.join(config.root, config.paths.src),
     watchContentBase: true,
