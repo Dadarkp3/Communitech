@@ -1,6 +1,7 @@
 const menuHamburguer = document.querySelector('#menu-hamburguer');
 const sideBar = document.querySelector('.sidebar');
 const blocked = document.querySelector('#blocked');
+const close = document.querySelector('#close');
 sideBar.classList.add('closed');
 
 function open() {
@@ -17,3 +18,4 @@ function closed() {
 
 menuHamburguer.onclick = open;
 blocked.onclick = closed;
+close.onclick = closed;

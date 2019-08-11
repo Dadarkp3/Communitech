@@ -146,4 +146,16 @@ ul {
     opacity: 0;
     transition: all ease 1s;
   }
+
+  .sidebar-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .sidebar-wrapper img {
+    width: 24px;
+    height: 24px;
+  }
 }
